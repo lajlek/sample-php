@@ -5,7 +5,7 @@ use Cowsayphp\Farm;
 
 //header('Content-Type: text/plain');
 echo "<pre>";
-var_dump($_SERVER);
+var_dump($_SERVER['HTTP_DO_CONNECTING_IP']);
 exit;
 $text = "Set a message by adding ?message=<message here> to the URL";
 if(isset($_GET['message']) && $_GET['message'] != '') {
